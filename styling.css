@@ -1,17 +1,12 @@
-div h1 {
+h1 {
     font-size: 70px;
-    color: black;
-    background-color: lightblue;
-    text-align: center;
-    margin: 0px;
-    }
-    
-    div h2 {
-    
-    font-size: 50px;
     color: black;
     background-color: yellow;
     text-align: center;
     margin: 0px;
-    
     }
+    
+   body{
+
+        background-color: lightcoral;   
+   }
