@@ -5,8 +5,31 @@ h1 {
     text-align: center;
     margin: 0px;
     }
-    
-   body{
+
+
+
+body{
 
         background-color: lightcoral;   
    }
+
+ul{
+
+    padding: 10px;
+
+}
+
+   ul li{
+       background-color: yellow;
+       margin-top: 100px;
+       display: block;
+    list-style: none;
+    display: inline-block;
+    line-height: 100px;
+    padding:0 100px;
+
+
+}
+ul li :hover{
+    color: red;
+}
