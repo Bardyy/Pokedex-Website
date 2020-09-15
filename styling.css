@@ -71,7 +71,7 @@ opacity: 0.9;
     margin-bottom: 40px;
 }
 
-#searchBar{
+.searchBar{
     border: 1px solid black;
     font-size: 16px;
     padding: 10px;
@@ -80,7 +80,7 @@ opacity: 0.9;
     
 }
 
-#searchBtn{
+.searchBtn{
     border: 1px solid black;
     font-size: 14px;
     padding: 10px;
@@ -89,4 +89,8 @@ opacity: 0.9;
     cursor: pointer;
     outline: none;
 
+}
+
+li {
+    list-style-type: none;
 }

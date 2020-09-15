@@ -13,29 +13,22 @@
     <h1>Bardia's Pokédex</h1>
 
     <h2 class="Search">
-        <div class="Search-1">
-            <form action="" method="POST">
-                <input type="text" id="searchBar" placeholder="" value="Search By Name.." autocomplete="on"
-                    maxlength="20" onmousedown="" onblur="" />
-                <input type="submit" id="searchBtn" value="Go!" />
 
-            </form>
 
-        </div>
+        <input placeholder="Search By Name.." type="text" class="searchBar" maxlength="20" id="search" />
+        <button id="search5" onclick="showPokemonArray(pokemonArray)" class="searchBtn">Go!</button>
 
-        <div class="Search-2">
-            <form action="" method="POST">
-                <input type="text" id="searchBar" placeholder="" value="Search By Number.." autocomplete="on"
-                    maxlength="20" onmousedown="active()" onblur="" />
-                <input type="submit" id="searchBtn" value="Go!" />
+        <input placeholder="Search By Number.." class="searchBar" maxlength="20" id="search-2" />
 
-            </form>
-        </div>
+        <button id="searchMe" onclick="numberFinder()" class="searchBtn">Go!</button>
+
 
     </h2>
 
+    <ul class="list-group" id="list"></ul>
+
     <div class="container-1">
-        <ul>
+        <ul id="menu">
             <li>
                 <div class="title"> 1.Bulbasaur</div>
                 <div class="description"> Bulbasaur is a stage 1 poison/grass pokemon
@@ -183,21 +176,18 @@
     </div>
 
 
-    <script src="pokedex.js">
 
+
+
+
+
+    <script src="pokedex.js">
     </script>
 
-    <ul id="myMenu">
-        <li><a href="#">Bulbasaur</a></li>
-        <li><a href="#">Ivysaur</a></li>
-        <li><a href="#">Venusaur</a></li>
-        <li><a href="#">Charmander</a></li>
-        <li><a href="#">Charmeleon</a></li>
-        <li><a href="#">Charizard</a></li>
-        <li><a href="#">Squirtle</a></li>
-        <li><a href="#">Wartortle</a></li>
-        <li><a href="#">Blastoise</a></li>
-    </ul>
+    <ul></ul>
+
+
+
 
 </body>
 
