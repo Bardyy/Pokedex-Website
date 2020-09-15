@@ -6,10 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pokédex </title>
     <link rel="stylesheet" href="styling.css" />
+
 </head>
 
 <body>
     <h1>Bardia's Pokédex</h1>
+
+    <h2 class="Search">
+        <div class="Search-1">
+            <form action="" method="POST">
+                <input type="text" id="searchBar" placeholder="" value="Search By Name.." autocomplete="on"
+                    maxlength="20" onmousedown="" onblur="" />
+                <input type="submit" id="searchBtn" value="Go!" />
+
+            </form>
+
+        </div>
+
+        <div class="Search-2">
+            <form action="" method="POST">
+                <input type="text" id="searchBar" placeholder="" value="Search By Number.." autocomplete="on"
+                    maxlength="20" onmousedown="active()" onblur="" />
+                <input type="submit" id="searchBtn" value="Go!" />
+
+            </form>
+        </div>
+
+    </h2>
+
     <div class="container-1">
         <ul>
             <li>
@@ -159,8 +183,21 @@
     </div>
 
 
-    <script src="pokedex.js"></script>
+    <script src="pokedex.js">
 
+    </script>
+
+    <ul id="myMenu">
+        <li><a href="#">Bulbasaur</a></li>
+        <li><a href="#">Ivysaur</a></li>
+        <li><a href="#">Venusaur</a></li>
+        <li><a href="#">Charmander</a></li>
+        <li><a href="#">Charmeleon</a></li>
+        <li><a href="#">Charizard</a></li>
+        <li><a href="#">Squirtle</a></li>
+        <li><a href="#">Wartortle</a></li>
+        <li><a href="#">Blastoise</a></li>
+    </ul>
 
 </body>
 

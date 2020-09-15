@@ -19,7 +19,7 @@ body{
     background: royalblue;
     margin: 20px auto;
     padding: 20px 0px;
-    margin-top: 65px;
+    margin-top: 10px;
 
 }
 
@@ -69,4 +69,24 @@ opacity: 0.9;
     height: 40%;
     margin-left: 80px;
     margin-bottom: 40px;
+}
+
+#searchBar{
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+    width: 200px;
+    
+}
+
+#searchBtn{
+    border: 1px solid black;
+    font-size: 14px;
+    padding: 10px;
+    background: #f1d829;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+
 }
