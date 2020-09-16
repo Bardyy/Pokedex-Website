@@ -1,23 +1,22 @@
 
-const Pokemons = ['Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard', 'Squirtle', 'Wartortle', 'Blastoise',
-    'Caterpie', 'Metapod', 'Butterfree', 'Weedle', 'Kakuna', 'Beedrill', 'Pidgey', 'Pidgeotto', 'Pidgeot', 'Rattata', 'Raticate'];
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
-document.getElementById('search').addEventListener('input', (e) => {
-
-    let pokemonArray = [];
-    if (e.target.value) {
-        pokemonArray = Pokemons.filter(Pokemon => Pokemon.toLowerCase().includes(e.target.value));
-        pokemonArray = pokemonArray.map(Pokemon => '<li>' + Pokemon + '</li>');
-
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("search");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
     }
-    showPokemonArray(pokemonArray);
-
-});
-
-
-function showPokemonArray(pokemonArray) {
-    const html = !pokemonArray.length ? '' : pokemonArray.join('');
-    (document.querySelector('ul').innerHTML = html);
 }
 
 
@@ -64,6 +63,9 @@ function numberFinder() {
         case "19": alert("The Pokemon is Rattata");
             break;
         case "20": alert("The Pokemon is Raticate");
+            break;
+        default:
+            alert("error, the number is not between 1-20. Please try again")
             break;
 
     }
