@@ -12,41 +12,26 @@
 <body>
     <h1><img class="pokedex-logo" src="img/Pokédex_logo.png" alt=""></h1>
 
+
     <h2 class="Search">
-        <button onclick="myFunction()" class="searchBtn">Search Using Name!</button>
-        <div id="myDropdown" class="dropdown-content">
-            <input maxlength="20" type="text" class="searchBar" placeholder="Search By Name.." id="search"
-                onkeyup="filterFunction()">
-
-            <a href="#">Bulbasaur</a>
-            <a href="#">Ivysaur</a>
-            <a href="#">Venusaur</a>
-            <a href="#">Charmander</a>
-            <a href="#">Charmeleon</a>
-            <a href="#">Charizard</a>
-            <a href="#">Squirtle</a>
-            <a href="#">Wartortle</a>
-            <a href="#">Blastoise</a>
-            <a href="#">Caterpie</a>
-            <a href="#">Metapod</a>
-            <a href="#">Butterfree</a>
-            <a href="#">Weedle</a>
-            <a href="#">Kakuna</a>
-            <a href="#">Beedrill</a>
-            <a href="#">Pidgey</a>
-            <a href="#">Pidgeotto</a>
-            <a href="#">Pidgeot</a>
-            <a href="#">Rattata</a>
-            <a href="#">Raticate</a>
-        </div>
 
 
-        <input placeholder="Search By Number.." class="searchBar" maxlength="20" id="search-2" />
+        <form autocomplete="off">
+            <div class="autocomplete">
+                <input id="myInput2" type="text" placeholder="Search by name!">
+            </div>
+        </form>
 
-        <button id="searchMe" onclick="numberFinder()" class="searchBtn">Go!</button>
 
+        <form autocomplete="off">
+            <div class="autocomplete">
+                <input id="myInput" type="text" placeholder="Search by number!">
+            </div>
+        </form>
 
     </h2>
+
+
 
     <ul class="list-group" id="list"></ul>
 

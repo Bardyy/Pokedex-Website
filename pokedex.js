@@ -18,6 +18,7 @@ function filterFunction() {
             a[i].style.display = "none";
         }
     }
+
 }
 
 
@@ -70,8 +71,4 @@ function numberFinder() {
             break;
 
     }
-
-
-
 }
-
