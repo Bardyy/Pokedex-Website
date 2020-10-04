@@ -87,3 +87,11 @@ function autocomplete(inp, arr) {
             x[i].classList.remove("autocomplete-active");
         }
     }
+    function closeAllLists(elmnt) {
+        var x = document.getElementsByClassName("searchItems");
+        for (var i = 0; i < x.length; i++) {
+            if (elmnt != x[i] && elmnt != inp) {
+                x[i].parentNode.removeChild(x[i]);
+            }
+        }
+    }
