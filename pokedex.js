@@ -37,3 +37,33 @@ function autocomplete(inp, arr) {
 
         a.setAttribute("id", this.id + "autocomplete-list");
         a.setAttribute("class", "searchItems");
+        this.parentNode.appendChild(a);
+
+
+        for (i = 0; i < arr.length; i++) {
+
+            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+
+                b = document.createElement("DIV");
+                c = document.createElement("img");
+                c.setAttribute("src", "img/" + (i + 1) + ".png");
+
+                b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                b.innerHTML += arr[i].substr(val.length);
+
+                b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+
+                b.addEventListener("click", function (e) {
+
+                    inp.value = this.getElementsByTagName("input")[0].value;
+
+                    closeAllLists();
+                });
+                a.appendChild(b);
+                b.appendChild(c);
+
+
+
+            }
+        }
+    });
