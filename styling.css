@@ -114,7 +114,7 @@ li {
     font: 8px Arial; 
   }
   .autocomplete {
-    /*the container must be positioned relative:*/
+    width: 300px;
     position: relative;
     display: inline-block;
   }
