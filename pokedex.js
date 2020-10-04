@@ -39,7 +39,7 @@ function autocomplete(inp, arr) {
             if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
                 b = document.createElement("DIV");
                 c = document.createElement("img");
-                c.setAttribute("src", "img/" + (i + 1) + ".png");
+                c.setAttribute("src", "img/pokemon-" + (i + 1) + ".png");
                 b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
                 b.innerHTML += arr[i].substr(val.length);
                 b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
