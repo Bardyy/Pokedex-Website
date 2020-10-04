@@ -99,3 +99,46 @@ function autocomplete(inp, arr) {
         closeAllLists(e.target);
     });
 }
+var pokemons =
+    ["1. Bulbasaur is a stage 1 poison/grass pokemon which has a rarity of 4 and is caught in the wild ",
+        "2. Ivysaur is a stage 2 poison/grass pokemon which has a rarity of 5 and is caught in the wild",
+        "3. Venusaur is a stage 3 poison/grass pokemon which has a rarity of 6 and is caught in the wild",
+        "4. Charmander is a stage 1 fire pokemon which has a rarity of 4 and is caught in the wild",
+        "5. Charmeleon is a stage 2 fire pokemon which has a rarity of 5 and is caught in the wild",
+        "6. Charizard is a stage 3 fire/flying pokemon which has a rarity of 6 and is caught in the wild",
+        "7. Squirtle is a stage 1 water pokemon which has a rarity of 4 and is caught in the wild",
+        "8. Wartortle is a stage 2 water pokemon which has a rarity of 5 and is caught in the wild",
+        "9. Blastoise is a stage 3 water pokemon which has a rarity of 6 and is caught in the wild",
+        "10. Caterpie is a stage 1 bug pokemon which has a rarity of 1 and is caught in the wild",
+        "11. Metapod is a stage 2 bug pokemon which has a rarity of 3 and is caught in the wild",
+        "12. Butterfree is a stage 3 bug/flying pokemon which has a rarity of 4 and is caught in the wild",
+        "13. Weedle is a stage 1 bug/poison pokemon which has a rarity of 1 and is caught in the wild",
+        "14. Kakuna is a stage 2 bug/poison pokemon which has a rarity of 3 and is caught in the wild",
+        "15. Beedrill is a stage 3 bug/poison pokemon which has a rarity of 4 and is caught in the wild",
+        "16. Pidgey is a stage 1 flying pokemon which has a rarity of 1 and is caught in the wild",
+        "17. Pidgeotto is a stage 2 flying pokemon which has a rarity of 3 and is caught in the wild",
+        "18. Pidgeot is a stage 3 flying pokemon which has a rarity of 4 and is caught in the wild",
+        "19. Rattata is a stage 1 normal pokemon which has a rarity of 1 and is caught in the wild",
+        "20. Raticate is a stage 2 normal pokemon which has a rarity of 4 and is caught in the wild",];
+autocomplete(document.getElementById("myInput"), pokemons);
+var pokemons = ["Bulbasaur is a stage 1 poison/grass pokemon which has a rarity of 4 and is caught in the wild ",
+    "Ivysaur is a stage 2 poison/grass pokemon which has a rarity of 5 and is caught in the wild",
+    "Venusaur is a stage 3 poison/grass pokemon which has a rarity of 6 and is caught in the wild",
+    "Charmander is a stage 1 fire pokemon which has a rarity of 4 and is caught in the wild",
+    "Charmeleon is a stage 2 fire pokemon which has a rarity of 5 and is caught in the wild",
+    "Charizard is a stage 3 fire/flying pokemon which has a rarity of 6 and is caught in the wild",
+    "Squirtle is a stage 1 water pokemon which has a rarity of 4 and is caught in the wild",
+    "Wartortle is a stage 2 water pokemon which has a rarity of 5 and is caught in the wild",
+    "Blastoise is a stage 3 water pokemon which has a rarity of 6 and is caught in the wild",
+    "Caterpie is a stage 1 bug pokemon which has a rarity of 1 and is caught in the wild",
+    "Metapod is a stage 2 bug pokemon which has a rarity of 3 and is caught in the wild",
+    "Butterfree is a stage 3 bug/flying pokemon which has a rarity of 4 and is caught in the wild",
+    "Weedle is a stage 1 bug/poison pokemon which has a rarity of 1 and is caught in the wild",
+    "Kakuna is a stage 2 bug/poison pokemon which has a rarity of 3 and is caught in the wild",
+    "Beedrill is a stage 3 bug/poison pokemon which has a rarity of 4 and is caught in the wild",
+    "Pidgey is a stage 1 flying pokemon which has a rarity of 1 and is caught in the wild",
+    "Pidgeotto is a stage 2 flying pokemon which has a rarity of 3 and is caught in the wild",
+    "Pidgeot is a stage 3 flying pokemon which has a rarity of 4 and is caught in the wild",
+    "Rattata is a stage 1 normal pokemon which has a rarity of 1 and is caught in the wild",
+    "Raticate is a stage 2 normal pokemon which has a rarity of 4 and is caught in the wild",];
+autocomplete(document.getElementById("myInput2"), pokemons);
